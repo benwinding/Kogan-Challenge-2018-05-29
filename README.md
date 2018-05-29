@@ -8,6 +8,7 @@ The solution that I came up with is a simple API server which contacts the given
 
 ###  API
 The api is as follows
+
 | url | function           | return type  | example link |
 | ------------- |:-------------:| -----:| ----:|
 | /all/{CATEGORY}/average_cw | Returns the average cubic weight for the given CATEGORY | Number  | [/all/Air Conditioners/average_cw](/all/Air%20Conditioners/average_cw) |
