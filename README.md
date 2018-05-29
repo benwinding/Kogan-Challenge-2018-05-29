@@ -11,9 +11,9 @@ The api is as follows
 
 | url | function           | return type  | example link |
 | ------------- |:-------------:| -----:| ----:|
-| /all/{CATEGORY}/average_cw | Returns the average cubic weight for the given CATEGORY | Number  | [/all/Air Conditioners/average_cw](/all/Air%20Conditioners/average_cw) |
-| /all/{CATEGORY}      | Returns all product objects matching the given CATEGORY | Array | [/all/Air Conditioners](/all/Air%20Conditioners) |
-| /all/      | Returns all product objects | Array |  [/all](/all) |
+| /all/{CATEGORY}/average_cw | Returns the average cubic weight for the given CATEGORY | Number  | [/all/Air Conditioners/average_cw](https://kogan-challenge-2018-05-29.herokuapp.com/all/Air%20Conditioners/average_cw) |
+| /all/{CATEGORY}      | Returns all product objects matching the given CATEGORY | Array | [/all/Air Conditioners](https://kogan-challenge-2018-05-29.herokuapp.com/all/Air%20Conditioners) |
+| /all/      | Returns all product objects | Array |  [/all](https://kogan-challenge-2018-05-29.herokuapp.com/all) |
 
 ###  Tech
 - Node Application
