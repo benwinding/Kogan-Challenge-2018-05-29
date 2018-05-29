@@ -9,51 +9,70 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Welcome to Glitch!</title>
-    <meta name="description" content="A cool thing made with Glitch">
-    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+<head>
+    <title>KOGAN CHALLENGE!</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
-  </head>
-  <body>
-    <header>
-      <h1>
-        A Dream of the Future
-      </h1>
-    </header>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <main>
-      <p class="bold">Oh hi,</p>
-      
-      <p>Tell me your hopes and dreams:</p>
-      
-      <form>
-        <input name="dream" type="text" maxlength="100" placeholder="Dreams!" aria-labelledby="submit-dream">
-        <button type="submit" id="submit-dream">Submit Dream</button>
-      </form>
-      
-      <section class="dreams">
-        <ul id="dreams"></ul>
-      </section>
-    </main>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <footer>
-      Made with <a href="https://glitch.com">Glitch</a>!
-    </footer>
-    
-    
-    <!-- import the webpage's client-side javascript file -->
-    <script src="/client.js"></script>
-
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
-    <script src="https://button.glitch.me/button.js"></script>
-
-  </body>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <h1><a id="Kogan_Challenge_0"></a>Kogan Challenge</h1>
+    <p>This is my solution to the <a href="/kogan-challenge.pdf">Specific Kogan Programming Challenge</a> assigned to me.</p>
+    <h1><a id="Solution_5"></a>Solution</h1>
+    <p>The solution that I came up with is a simple API server which contacts the given api end-point. Here’s how the solution is implemented.</p>
+    <h3><a id="API_8"></a>API</h3>
+    <p>The api is as follows</p>
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>url</th>
+            <th style="text-align:center">function</th>
+            <th style="text-align:right">return type</th>
+            <th style="text-align:right">example link</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>/all/{CATEGORY}/average_cw</td>
+            <td style="text-align:center">Returns the average cubic weight for the given CATEGORY</td>
+            <td style="text-align:right">Number</td>
+            <td style="text-align:right"><a href="/all/Air%20Conditioners/average_cw">/all/Air Conditioners/average_cw</a></td>
+        </tr>
+        <tr>
+            <td>/all/{CATEGORY}</td>
+            <td style="text-align:center">Returns all product objects matching the given CATEGORY</td>
+            <td style="text-align:right">Array</td>
+            <td style="text-align:right"><a href="/all/Air%20Conditioners">/all/Air Conditioners</a></td>
+        </tr>
+        <tr>
+            <td>/all/</td>
+            <td style="text-align:center">Returns all product objects</td>
+            <td style="text-align:right">Array</td>
+            <td style="text-align:right"><a href="/all">/all</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <h3><a id="Tech_16"></a>Tech</h3>
+    <ul>
+        <li>Node Application</li>
+        <li>Express js Server</li>
+        <li>Promises, async await</li>
+    </ul>
+    <h3><a id="Get_started_21"></a>Get started</h3>
+    <ol>
+        <li>Clone the <a href="https://github.com/benwinding/Kogan-Challenge-2018-05-29">GitHub Repository</a></li>
+        <li><code>npm install</code> or <code>yarn</code></li>
+        <li><code>npm start</code> or <code>yarn start</code></li>
+    </ol>
+</div>
+</body>
 </html>
