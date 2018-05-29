@@ -1,27 +1,25 @@
-Welcome to Glitch
-=================
+Kogan Challenge
+===============
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+This is my solution to the [Specific Kogan Programming Challenge](/kogan-challenge.pdf) assigned to me.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+# Solution
+The solution that I came up with is a simple API server which contacts the given api end-point. Here's how the solution is implemented.
 
-Find out more [about Glitch](https://glitch.com/about).
+###  API
+The api is as follows
+| url | function           | return type  | example link |
+| ------------- |:-------------:| -----:| ----:|
+| /all/{CATEGORY}/average_cw | Returns the average cubic weight for the given CATEGORY | Number  | [/all/Air Conditioners/average_cw](/all/Air%20Conditioners/average_cw) |
+| /all/{CATEGORY}      | Returns all product objects matching the given CATEGORY | Array | [/all/Air Conditioners](/all/Air%20Conditioners) |
+| /all/      | Returns all product objects | Array |  [/all](/all) |
 
+###  Tech
+- Node Application
+- Express js Server
+- Promises, async await
 
-Your Project
-------------
-
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ
+###  Get started
+1. Clone the [GitHub Repository]()
+1. `npm install` or `yarn`
+1. `npm start` or `yarn start`
